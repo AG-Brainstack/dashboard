@@ -1,0 +1,35 @@
+/* LeaderboardPage.css */
+
+.LeaderboardPage {
+    text-align: center;
+  }
+  
+  .leaderboard-container {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    justify-content: space-between; /* Distribute items evenly */
+    padding: 20px;
+  }
+  
+  .leaderboard {
+    padding: 20px;
+  }
+  
+  .player {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .player-id {
+    margin-bottom: 5px;
+  }
+  
+  .player-name {
+    font-weight: bold;
+  }
+  
+  .player-score {
+    margin-top: 5px;
+  }
+  

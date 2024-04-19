@@ -3,11 +3,37 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import SecondPage from './pages/SecondPage';
+import LeaderboardPage from './pages/LeaderboardPage';
+import PlayerAnalyticsPage from './pages/PlayerAnalyticsPage';
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom"
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+  },
+  {
+    path: "SecondPage",
+    element: <SecondPage />,
+  },
+  {
+    path: "LeaderboardPage",
+    element: <LeaderboardPage />,
+  },
+  {
+    path: "PlayerAnalyticsPage",
+    element: <PlayerAnalyticsPage />,
+  },
+]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
 

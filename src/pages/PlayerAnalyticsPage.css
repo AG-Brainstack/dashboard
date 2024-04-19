@@ -1,0 +1,17 @@
+.PlayerAnalyticsPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .analytics-container {
+    text-align: center;
+  }
+  
+  .analytics-container h1 {
+    margin: 0; /* Reset margin to remove default spacing */
+    padding: 0; /* Reset padding */
+  }
+  
